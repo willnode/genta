@@ -1,0 +1,20 @@
+{
+  "name": "pg-llm",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "node --env-file=.env main.js"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "knex": "^3.1.0",
+    "knex-schema-inspector": "^3.1.0",
+    "mysql": "^2.18.1",
+    "openai": "^4.47.1",
+    "pg": "^8.11.5",
+    "sqlite3": "^5.1.7"
+  }
+}

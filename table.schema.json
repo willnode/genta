@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "select": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "user.email",
+                    "user.country",
+                    "user.password",
+                    "user.last_log_in"
+                ]
+            }
+        },
+        "where": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "enum": [
+                            "email",
+                            "country",
+                            "password",
+                            "last_log_in"
+                        ]
+                    },
+                    "operator": {
+                        "type": "string",
+                        "enum": [
+                            "equal",
+                            "not_equal",
+                            "greater_than",
+                            "less_than",
+                            "starts_with",
+                            "ends_with"
+                        ]
+                    },
+                    "value": {
+                        "type": ["string", "number"]
+                    }
+                }
+            }
+        }
+    }
+}
