@@ -49,6 +49,9 @@
         const t = await r.json();
         console.log(t);
         rResult = t.result;
+        if (!rResult) {
+            rResult = JSON.stringify(t);
+        }
         sessionStorage.setItem("rResult", rResult);
         sessionStorage.setItem("rQuery", rQuery);
     }
