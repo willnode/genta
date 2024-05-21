@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "main.js",
+  "main": "main.ts",
   "scripts": {
-    "test": "node --env-file=.env main.js"
+    "test": "bun main.ts"
   },
   "author": "",
   "license": "",
@@ -16,5 +16,8 @@
     "openai": "^4.47.1",
     "pg": "^8.11.5",
     "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.2"
   }
 }
